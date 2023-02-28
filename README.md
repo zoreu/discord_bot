@@ -15,6 +15,10 @@ python -m wget https://github.com/zoreu/unzip/raw/main/unzip.py
 
 python unzip.py
 
+make secret keys:
+
+server_id and bot_token
+
 edit main.py
 
 put code:
@@ -22,11 +26,3 @@ put code:
 import os
 
 os.system('python discord_bot-main/main.py')
-
-
-
-
-
-
-
-
