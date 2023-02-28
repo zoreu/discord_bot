@@ -2,7 +2,14 @@ import sqlite3
 import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
+db_folder = os.path.join(dir_path, "db")
 db_file = os.path.join(dir_path, "db", "config.db")
+
+if not os.path.exists(db_folder):
+    try:
+        os.mkdir(db_folder)
+    except:
+        pass
 
 def make_tables():
     conn = sqlite3.connect(db_file)
