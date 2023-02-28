@@ -3,7 +3,7 @@ try:
     import discord
     from discord.ext import commands
 except:
-    os.system("pip install -r requirements.txt")
+    os.system("pip install -r discord_bot-main/requirements.txt")
     try:
         os.system("clear")
     except:
